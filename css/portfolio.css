@@ -1,0 +1,73 @@
+.container-fluid{font-family: 'Blinker', sans-serif;}
+.intro h1, .intro h2, .me h1, .tech h1, .recent h1, .fbTop h1 {
+   font-weight: 700;
+   margin-bottom: .5em;
+   font-size: 3.5em;
+}
+
+.btn{background-color: #ff5851; color: #fff;}
+.btn:hover{background-color:#ff7d78;}
+.btn:focus {box-shadow: none!important; outline: none;}
+
+.intro{padding: 8% 0;}
+.intro h2{font-size: 2.5em;}
+
+.me{background-color: #f0f0f0; padding: 4% 4%; text-align: center;}
+.me p{font-size: 1.2em;}
+
+.tech{padding: 8% 4%; text-align: center;}
+.tech p{margin-bottom: .1em;}
+.tech img{margin-bottom: .5em; width: 15%;}
+
+.recent{padding: 0 4% 1%;}
+.recent h1{text-align: center;}
+
+.appearContainer{overflow:hidden; padding: 0 4% 8%;}
+.appearRight{margin-bottom: 2%;opacity: 0; left: 100%; overflow: hidden; font-size: 1.1em;}
+.appearLeft{margin-bottom: 2%;opacity: 0; right: 100%; overflow: hidden; font-size: 1.1em;}
+
+.arrow{padding: 4%;}
+.arrowImg{margin: 0 auto; display: block; width: 6%;}
+
+/* Facebook Page Styles */
+.fbTop{padding: 4% 4% 6%; background-color: #f0f0f0;}
+.imgRow img{width: 100%; border-radius: 3px; box-shadow: 0 .125rem .25rem rgba(0,0,0,.075); transition: box-shadow .3s;}
+.imgRow img:hover{box-shadow: 0 .5rem 1rem rgba(0,0,0,.15); cursor: pointer;}
+
+.btnRow{background-color: #f0f0f0;}
+.btnRow a:hover{text-decoration: none;}
+
+.modalScroll .modal-dialog{overflow-y: auto; height: 90%;}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+   .appearContainer h3{font-size: 1.2em;}
+   .appearContainer p{line-height: 1.1em;}
+   .linkedInLogo{width: 10%;}
+
+   .imgRow img{width: 80%}
+}
+   
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+   .appearContainer h3{font-size: 1.3em;}
+   .appearContainer p{line-height: 1.1em;}
+   .linkedInLogo{width: 10%;}
+
+   .imgRow img{width: 80%}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+   .linkedInLogo{width: 12%;}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+   .linkedInLogo{width: 10%;}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+   .linkedInLogo{width: 8%;}
+}
