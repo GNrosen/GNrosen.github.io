@@ -2,8 +2,6 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const router = express.Router();
-const port_number = server.listen(process.env.PORT || 3000);
-
 
 router.get('/',function(req,res){
   res.sendFile(path.join(__dirname+'/views/index.html'));
@@ -20,6 +18,6 @@ app.use("/css", express.static('./css/'));
 app.use("/js", express.static('./js/'));
 app.use("/images", express.static('./images/'));
 
-app.listen(port_number);
+app.listen(process.env.PORT || 3000);
 
 console.log('Running at Port 3000');
